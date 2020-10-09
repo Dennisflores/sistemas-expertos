@@ -9,8 +9,10 @@ Repositorio para almacenar los ejercicios realizados
   2. La solución debe optimizar el tiempo de ejecución al menos en un 300%.
   
   se ha utilizado para la solución la librería [scipy.stats](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.truncnorm.html) y se ha hecho uso del método truncnorm, en futuras ramas se buscará optimizar el código
-  se ha reducido la ejecución al menos 2 segundos, quizás un 90%
+  se ha reducido la ejecución al menos 2 segundos
 
   Pedemos ver la sintaxis del método utilizado:
   ![Sintaxis del método utilizado](https://vrzkj25a871bpq7t1ugcgmn9-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/numpy-random-normal-syntax-explanation.png)
+
+
 

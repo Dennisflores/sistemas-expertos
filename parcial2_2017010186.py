@@ -6,12 +6,9 @@ def generarDatos(media, escala, tamanio):
 	return np.random.normal(loc = media, scale = escala, size = tamanio)	           
 
 # se calcula la sumatoria de los puntos menores a 500
-def sumatoriaPuntos(datos):
-	suma = 0
-	
-	suma = sum([valor for valor in datos if valor < 500])
-	return suma	
-
+def sumatoriaPuntos(datos):	
+	return sum([valor for valor in datos if valor < 500])
+		
 inicio = time()
 
 media = 500
@@ -23,6 +20,4 @@ suma = sumatoriaPuntos(datos)
 tiempo_transcurrido = time() - inicio
 
 print("Suma de los valores menores a 500: {} ".format(suma))
-# print(min(datos)) #para conocer el dato menor generado
-# print(max(datos)) #para conocer el dato menor generado
 print("\nTiempo transcurrido: {} segs".format(tiempo_transcurrido))
