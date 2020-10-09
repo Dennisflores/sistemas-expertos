@@ -1,9 +1,9 @@
-from scipy.stats import truncnorm
+import numpy as np
 from time import time
 
 # se generan los datos gran el metodo truncnorm de la libreria scipy
-def generarDatos(media, valorMin, valorMax, escala, tamanio):
-	return truncnorm((valorMin - media) / escala, (valorMax - media) / escala, loc=media, scale=escala).rvs(size=tamanio)	           
+def generarDatos(media, escala, tamanio):
+	return np.random.normal(loc = media, scale = escala, size = tamanio)	           
 
 # se calcula la sumatoria de los puntos menores a 500
 def sumatoriaPuntos(datos):
@@ -18,12 +18,10 @@ def sumatoriaPuntos(datos):
 inicio = time()
 
 media = 500
-valorMin = 100
-valorMax = 100000
 escala = 30
 tamanio = 10000000
 
-datos = generarDatos(media, valorMin, valorMax, escala, tamanio)
+datos = generarDatos(media, escala, tamanio)
 suma = sumatoriaPuntos(datos)
 tiempo_transcurrido = time() - inicio
 
