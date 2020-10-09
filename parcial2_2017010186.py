@@ -8,11 +8,8 @@ def generarDatos(media, escala, tamanio):
 # se calcula la sumatoria de los puntos menores a 500
 def sumatoriaPuntos(datos):
 	suma = 0
-	for dato in datos:
-		if(dato < 500): #para el caso se debia trabajar con 500000 pero todos los datos 
-		# generados son menores a ese numero dados los datos de la media y la escala por eso se utilizo 
-		# 500 para filtrar de mejor manera
-			suma += dato
+	
+	suma = sum([valor for valor in datos if valor < 500])
 	return suma	
 
 inicio = time()
