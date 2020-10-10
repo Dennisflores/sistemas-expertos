@@ -27,5 +27,5 @@ tardo en ejecutarse
   Pedemos ver la sintaxis del método utilizado:
   ![Sintaxis del método utilizado](https://vrzkj25a871bpq7t1ugcgmn9-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/numpy-random-normal-syntax-explanation.png)
 
-
+  [Enlace a video explicativo sobre laboratorio y parcial](https://youtu.be/9uvY8XXxai4)
 
